@@ -1,0 +1,1 @@
+# detechgene_logo_simple

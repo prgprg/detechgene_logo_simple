@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detechgene Links</title>
+
+  <!-- Meta -->
+  <meta name="description" content="All my important links in one place" />
+  <meta name="author" content="Detechgene GmbH" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --radius: 14px;
+      --card-a: rgba(255, 255, 255, 0.88);   /* “white” with opacity */
+        --card-b: rgba(216, 223, 231, 0.82);   /* slightly bluish with opacity */
+
+        --btn-a: #0b1220;                      /* dark navy */
+        --btn-b: #111b33;                      /* slightly lighter navy */
+        --btn-hover-a: #0c1b3a;                /* hover */
+        --btn-hover-b: #0b4aa6;                /* hover accent */
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+/* 
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -20%, #1e293b, var(--bg));
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    } */
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Inter', system-ui, sans-serif;
+        color: var(--text);
+
+        background:
+            url("https://raw.githubusercontent.com/prgprg/detechgene_logo_simple/efa7d88e4a85d6ce5183f5ec2fdbd76a0fe58529/bg.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        /* 👇 THIS IS THE FIX */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+}
+
+    .container {
+        width: 100%;
+        max-width: 520px;
+
+        /* gradient + opacity without fading children */
+        /* background: linear-gradient(180deg, var(--card-a), var(--card-b)); */
+        background: rgb(246, 249, 255); /* semi-transparent white */
+
+        border-radius: var(--radius);
+        padding: 32px 24px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        text-align: center;
+
+        /* optional: subtle border to look premium */
+        border: 1px solid rgba(255, 255, 255, 0.35);
+
+        /* optional: keep blur effect if supported */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        }
+
+
+    .logo {
+        max-width: 470px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+        margin-bottom: 16px;
+        object-fit: contain;
+        }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 2px solid var(--accent);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .bio {
+        font-family: 'Sora', 'Inter', system-ui, sans-serif;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        color: #1a3066;
+        text-align: center;
+        line-height: 1.4;
+        margin: 8px 0 38px 0;
+        }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+   .link {
+        text-decoration: none;
+        color: #ffffff;
+
+        /* ✅ button gradient */
+            background: linear-gradient(135deg, var(--btn-hover-a), var(--btn-hover-b));
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 14px 16px;
+        border-radius: 12px;
+        font-weight: 600;
+
+        /* makes the buttons look more “pressable” */
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+
+        transition: transform 0.15s ease, filter 0.15s ease, border-color 0.15s ease;
+        }
+
+        .link:hover {
+            transform: translateY(-2px);
+
+            /* ✅ hover gradient (different colors) */
+        background: linear-gradient(135deg, var(--btn-a), var(--btn-b));
+
+            border-color: rgba(56, 189, 248, 0.55);
+
+            /* small pop without changing color manually */
+            filter: brightness(1.05);
+            }
+
+
+    footer {
+      margin-top: 28px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="container" >
+    <!-- Logo -->
+    <img
+      class="logo"
+      src="https://github.com/prgprg/detechgene_logo_simple/blob/main/Logo_Transparent.png?raw=true"
+      alt="logo"
+      onerror="this.style.display='none'; document.getElementById('fallback-name').style.display='block';"
+    />
+
+    <!-- Fallback text if logo fails -->
+    <h1 id="fallback-name" style="display:none;">Detechgene</h1>
+
+    <p class="bio">
+      Simple and Precise Detection of Pathogens
+    </p>
+
+    <nav class="links">
+      <a class="link" href="https://detechgene-my.sharepoint.com/:b:/g/personal/a_pourgholami_detechgene_de/IQAgB7v-kWZeRrbjTY5qwBlhAU7h0jBn3g6EQXBoz7BYYOs" target="_blank">One Pager</a>
+      <a class="link" href="https://detechgene-my.sharepoint.com/:b:/g/personal/a_pourgholami_detechgene_de/IQCpMqt1k7pySa8cpLlxS_XuAf4Y8ptj2kCm5x05zGO27Gs" target="_blank">Flyer</a>
+      <a class="link" href="https://www.youtube.com/watch?v=1F7XxPBQaLY" target="_blank">Product Video</a>
+      <a class="link" href="https://detechgene.com" target="_blank">Website</a>
+      <a class="link" href="https://linkedin.com/company/detechgene">LinkedIn</a>
+      <a class="link" href="https://www.instagram.com/detechgene/">Instagram</a>
+      <a class="link" href="https://www.tiktok.com/@detechgene">TikTok</a>
+    </nav>
+
+
+  </main>
+
+</body>
+</html>
